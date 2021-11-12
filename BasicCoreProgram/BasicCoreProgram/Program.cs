@@ -9,7 +9,7 @@ namespace BasicCoreProgram
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose an Option To Execute the Program\n 1.flipcoin\n 2.LeapYearCheck\n 3.PowerOfTwo\n 4.Exit");
+                Console.WriteLine("Choose an Option To Execute the Program\n 1.flipcoin\n 2.LeapYearCheck\n 3.PowerOfTwo\n 4.harmonicNumber\n 5.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -26,6 +26,10 @@ namespace BasicCoreProgram
                         pow.Power();
                         break;
                     case 4:
+                        HarmonicNumber result = new HarmonicNumber();
+                        result.Harmonic();
+                        break;
+                    case 5:
                         flag = false;
                         break;
                     default:
