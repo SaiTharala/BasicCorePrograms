@@ -9,7 +9,7 @@ namespace BasicCoreProgram
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose an Option To Execute the Program\n 1.flipcoin\n 2.LeapYearCheck\n 3.PowerOfTwo\n 4.harmonicNumber\n 5.PrimeFactors\n 6.QuotientAndRemainder \n 7.SwapTwoNumbers\n 8.EvenOrOddCheck\n 9.Exit");
+                Console.WriteLine("Choose an Option To Execute the Program\n 1.flipcoin\n 2.LeapYearCheck\n 3.PowerOfTwo\n 4.harmonicNumber\n 5.PrimeFactors\n 6.QuotientAndRemainder \n 7.SwapTwoNumbers\n 8.EvenOrOddCheck\n 9.VowelOrConsonantCheck\n 10.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -30,7 +30,7 @@ namespace BasicCoreProgram
                         result.Harmonic();
                         break;
                     case 5:
-                       Factors prime = new Factors();
+                        Factors prime = new Factors();
                         prime.PrimeFactors();
                         break;
                     case 6:
@@ -46,6 +46,11 @@ namespace BasicCoreProgram
                         check1.EvenOdd();
                         break;
                     case 9:
+                        VowelOrConsonant check2 = new VowelOrConsonant();
+                        check2.VowelConsonant();
+
+                        break;
+                    case 10:
                         flag = false;
                         break;
                     default:
@@ -56,4 +61,6 @@ namespace BasicCoreProgram
         }
     }
 }
+
+
 
