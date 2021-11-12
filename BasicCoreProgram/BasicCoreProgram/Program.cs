@@ -4,12 +4,12 @@ namespace BasicCoreProgram
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[]args)
         {
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose an Option To Execute the Program\n 1.flipcoin\n 2.LeapYearCheck\n 3.PowerOfTwo\n 4.harmonicNumber\n 5.Exit");
+                Console.WriteLine("Choose an Option To Execute the Program\n 1.flipcoin\n 2.LeapYearCheck\n 3.PowerOfTwo\n 4.harmonicNumber\n 5.PrimeFactors\n 6.QuotientAndRemainder \n 7.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -30,6 +30,10 @@ namespace BasicCoreProgram
                         result.Harmonic();
                         break;
                     case 5:
+                        QuotientAndRemainder quotient = new QuotientAndRemainder();
+                        quotient.Result();
+                        break;
+                    case 6:
                         flag = false;
                         break;
                     default:
